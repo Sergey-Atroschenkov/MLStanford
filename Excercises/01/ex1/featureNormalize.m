@@ -28,7 +28,7 @@ sigma = zeros(1, size(X, 2));
 
 
 for i = 1:size(X, 2)
-    vector = X(:,i)
+    vector = X(:,i);
     mu(1,i) = mean(vector); %mean value
     sigma(1,i) = std(vector); %std deviation
 end
