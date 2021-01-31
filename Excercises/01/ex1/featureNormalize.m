@@ -27,11 +27,13 @@ sigma = zeros(1, size(X, 2));
 %       
 
 
+for i = 1:size(X, 2)
+    vector = X(:,i)
+    mu(1,i) = mean(vector);
+    sigma(1,i) = std(vector);
+end
 
-
-
-
-
+X_norm = (X_norm .- mu) ./ sigma;
 
 
 % ============================================================
